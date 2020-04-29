@@ -9,6 +9,7 @@ To learn more about the stack, see [Technologies and Tools Reference][tech_and_t
 Go through [Setup][setup] and follow [User Guide][user_guide]
 
 
+Made as part of a workshop with [SUAI] and [POLYTECH] students.
 
 
 
@@ -17,3 +18,6 @@ Go through [Setup][setup] and follow [User Guide][user_guide]
 [tech_and_tools_ref]: ./doc/technologies-and-tools-reference.md
 [setup]: ./setup/SETUP.md
 [user_guide]:./user-guide.md
+
+[SUAI]:http://www.suai.ru/  
+[POLYTECH]: https://english.spbstu.ru/
