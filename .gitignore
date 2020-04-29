@@ -1,0 +1,4 @@
+app/build/_output/
+.idea
+coverage.out
+coverage.html
