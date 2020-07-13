@@ -14,6 +14,8 @@
 
 ##### 4. Deploy to Kubernetes
 
+Switch to a kind context
+
 kubectl:
 `
 kubectl create deployment hello-server-3 --image=localhost:5000/http-server:0.0.1-834b731

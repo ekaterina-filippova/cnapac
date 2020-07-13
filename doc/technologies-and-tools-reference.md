@@ -1,9 +1,9 @@
-# Tecnologies and Tools Reference
+# Technologies and Tools Reference
 
 
 | Category        | Tool              | Features | Tutorials                            |
 |-----------------|-------------------|----------|--------------------------------------|
-| Languages       | [Go]              |          | https://tour.golang.org/             |
+| Languages       | [Go]              |          | https://tour.golang.org/, https://gobyexample.com/, book - http://www.gopl.io/|
 |                 | [Groovy]          |          |                                      |
 |                 | [Python]          |          |                                      |
 | Version control | [Git]             |          | https://githowto.com/                |
@@ -16,7 +16,8 @@
 | Automation      | [Jenkins]         |          |                                      |
 | Platform        | [Kubernetes]      |          |                                      |
 |                 | [Helm]            |          | https://www.katacoda.com/courses/helm|
-|                 | [Kind]            |          |                                      |
+|                 | [Kind]            | local Kubernetes clusters using Docker container “nodes” |                                      |
+|                 | [Kubie]           | context switching, namespace switching          |                                      |
 | Monitoring      |                   |          |                                      |
 |                 |                   |          |                                      |
 
@@ -32,3 +33,4 @@
 [Kubernetes]: https://kubernetes.io/
 [Helm]: https://helm.sh/
 [Kind]: https://kind.sigs.k8s.io/
+[Kubie]: https://github.com/sbstp/kubie/

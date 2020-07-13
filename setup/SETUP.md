@@ -1,8 +1,20 @@
 # SETUP
+## Virtual Machine in VirtualBox
+Ubuntu LTS (tested with 19.10) https://ubuntu.com/#download
+Disk Space - 10 GB, RAM - 5 GB
+
+TIP: Create a shared folder using Guest Additions. Enable bidirectional clipboard and Drag'n'Drop.
 
 ## IntelliJ IDEA
 ```asp
 sudo snap install intellij-idea-ultimate --classic
+```
+Install plugins: Go, Python, Robot Plugin 
+
+## Git
+```
+sudo apt install git
+git --version
 ```
 
 ## Go
@@ -25,11 +37,6 @@ newgrp docker
 docker version
 ```
 
-## Jenkins
-```asp
-docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts
-```
-Ref: https://github.com/jenkinsci/docker/blob/master/README.md
 
 ## Kind & Insecure Docker Registry
 Add a local registry 
@@ -41,8 +48,7 @@ cat <<EOF > /etc/docker/daemon.json
 EOF
 ```
 
-
-Run `./kind-with-registry.sh`
+Run `./setup/kind-with-registry.sh`
 
 ```bash
 curl localhost:5000/v2/_catalog
@@ -55,7 +61,7 @@ https://kind.sigs.k8s.io/docs/user/local-registry/
 ## kubectl
 ```bash
 curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.16.8/bin/linux/amd64/kubectl
-chmod +x ./kubectl
+sudo chmod +x ./kubectl
 sudo mv ./kubectl /usr/local/bin/kubectl
 kubectl version
 ```
@@ -66,6 +72,13 @@ Ref: https://v1-16.docs.kubernetes.io/docs/tasks/tools/install-kubectl/
 sudo snap install helm --classic
 helm version
 ```
+
+## Jenkins
+```asp
+docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins:lts
+```
+Ref: https://github.com/jenkinsci/docker/blob/master/README.md
+
 
 ## Robot
 ```bash
